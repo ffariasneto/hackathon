@@ -22,4 +22,3 @@ def combate(player, inimigo):
 player = Personagem("Heroi", 10, 50, 5)
 inimigo = Personagem("Monstro", 8, 30, 3)
 combate(player, inimigo)
-
