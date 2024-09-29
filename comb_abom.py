@@ -1,5 +1,5 @@
 import random
-import personagens
+from personagens import *
 
 def combate(player, inimigo):
     while player.vida > 0 and inimigo.vida > 0:
@@ -18,8 +18,8 @@ def combate(player, inimigo):
         if player.vida <= 0:
             print(f"{player.nome} foi derrotado!")
 
-# Exemplo de uso:
-player = Personagem("Heroi", 10, 50, 5)
-inimigo = Personagem("Monstro", 8, 30, 3)
-combate(player, inimigo)
 
+guerreiro = Personagem("Cassius", 50, 100, 50)
+abominacao = Personagem("Abominação", 15, 50, 10)
+lobo_zumbi = Personagem("Lobo Zumbi", 10, 50, 15)
+necromante = Personagem("Necromante", 45, 130, 40)
