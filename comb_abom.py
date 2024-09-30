@@ -1,5 +1,6 @@
 import random
 from personagens import *
+from dado_d6 import *
 
 def combate(player, inimigo):
     while player.vida > 0 and inimigo.vida > 0:
