@@ -25,13 +25,13 @@ Inteligência: {self.inteligencia}
     def receber_dano(self, dano):
         dado4 = lancar_dados()
 
-        if self.escudo < dado4:
+        if self.escudo < dado4[0]:
             self.vida -= dano
             print(f"{self.nome} recebeu {dano} de dano! Vida Atual: {self.vida}")
         else:
-            print(f"{self.nome} bloqueou o dano! Escudo: {self.escudo}, Dado Inimido: {dado4}")
+            print(f"{self.nome} bloqueou o dano! Escudo: {self.escudo}, Dado Inimigo: {dado4}")
 
 
-palatino = Personagem(nome="SirLanon",vida=8,energia=5,escudo=5,forca=3,agilidade=1,inteligencia=2)
+palatino = Personagem(nome="SirLanon",vida=8,energia=5,escudo=2,forca=3,agilidade=1,inteligencia=2)
 feiticeira = Personagem(nome="Ethairna",vida=6,energia=8,escudo=3,forca=1,agilidade=2,inteligencia=3)
 ladina = Personagem(nome="Lâmina da Lua",vida=6,energia=5,escudo=3,forca=2,agilidade=3,inteligencia=1)

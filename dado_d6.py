@@ -12,8 +12,8 @@ def lancar_dados():
     maior_valor = max(dados)
     soma_adic = sum(dado for dado in dados if dado == 1 or dado == 2)
     res = maior_valor + soma_adic
-    print(f"{res}")
-    print(dados)
+    # print(f"{res}")
+    # print(dados)
     print(f"Dados Rolados: {dado1}, {dado2}, {dado3}, Dado4 (ataque): {dado4}")
     return dado1, dado2, dado3, dado4
 

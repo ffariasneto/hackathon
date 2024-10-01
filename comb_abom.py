@@ -3,8 +3,11 @@ from personagens import palatino
 from inimigos import goblin_um
 from dado_d6 import lancar_dados
 
+
 def combate(palatino, goblin_um):
-    while palatino.vida > 0 and goblin_um.vida > 0:
+    ataque = 1
+    while ataque == 1:
+    # while palatino.vida > 0 and goblin_um.vida > 0:
         dado1, dado2, dado3, dado4 = lancar_dados()
 
         if (dado1 > goblin_um.escudo or dado2 > goblin_um.escudo or dado3 > goblin_um.escudo or
@@ -14,15 +17,13 @@ def combate(palatino, goblin_um):
             goblin_um.vida = 0
             print(f"{palatino.nome} derrotou {goblin_um.nome} com um ataque.")
             break
-
         
-
         if goblin_um.vida <= 0:
             print(f"{goblin_um.nome} foi derrotado!")
             break
         
-        dado4 = random.randint(1,6)
-        print(f"Dado do Goblin: {dado4}")
+        # dado4 = random.randint(1,6)
+        # print(f"Dado do Goblin: {dado4}")
 
         if dado4 > palatino.escudo:
             ataque_goblin = 1
@@ -34,6 +35,7 @@ def combate(palatino, goblin_um):
         if palatino.vida <= 0:
             print(f"{palatino.nome} foi derrotado!")
             break
+        ataque = 0
 
 combate(palatino, goblin_um)
         
