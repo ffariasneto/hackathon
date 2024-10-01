@@ -12,10 +12,10 @@ def combate(palatino, goblin_um):
             (dado1 + dado3 > goblin_um.escudo and (dado1 in (1, 2) or dado3 in (1, 2))) or
             (dado2 + dado3 > goblin_um.escudo and (dado2 in (1, 2) or dado3 in (1, 2)))):
             goblin_um.vida = 0
-            print(f"{palatino.nome} derrou {goblin_um.nome} com um ataque.")
+            print(f"{palatino.nome} derrotou {goblin_um.nome} com um ataque.")
             break
 
-        goblin_um.receber_dano(max(dado1, dado2, dado3))
+        
 
         if goblin_um.vida <= 0:
             print(f"{goblin_um.nome} foi derrotado!")

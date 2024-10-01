@@ -29,7 +29,7 @@ Força: {self.forca}
 mestre_um = Inimigos(nome="Coisa Gelatinona",vida=8,escudo=4,forca=3)
 mestre_dois = Inimigos(nome="Aranha Gigante",vida=7,escudo=5,forca=3)
 
-goblin_um = Inimigos(nome="Atirador",vida=1,escudo=5,forca=1)
-goblin_dois = Inimigos(nome="Esfaqueador",vida=1,escudo=4,forca=1)
-goblin_tres = Inimigos(nome="Poderoso",vida=1,escudo=7,forca=1)
-goblin_quatro = Inimigos(nome="Explosivo",vida=1,escudo=4,forca=1)
+goblin_um = Inimigos(nome="Goblin Atirador",vida=1,escudo=5,forca=1)
+goblin_dois = Inimigos(nome="Goblin Esfaqueador",vida=1,escudo=4,forca=1)
+goblin_tres = Inimigos(nome="Goblin Poderoso",vida=1,escudo=7,forca=1)
+goblin_quatro = Inimigos(nome="Goblin Explosivo",vida=1,escudo=4,forca=1)
